@@ -116,7 +116,7 @@ function Connections() {
                 }
             </>
             <hr />
-            <div className="grid grid-cols-8 gap-4 mt-4 mb-4">
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-3 mt-4 mb-4 p-4">
                 {
                     values.map((v, i) => {
                         // Check connection status
@@ -130,7 +130,7 @@ function Connections() {
                             <div 
                                 key={i} 
                                 onClick={(e) => setConnection(v, e)}
-                                className={`block px-4 h-20 border rounded cursor-pointer bg-olive-200 text-slate-900 font-semibold hover:bg-gray-100 hover:shadow-md transition flex items-center justify-center ${isActive.length > 0 ? 'bg-amber-400!' : ''} ${isSuccess.length > 0 ? 'hidden' : ''}${isWrong.length > 0 ? 'bg-red-400' : ''}`}
+                                className={`block px-1 h-20 border rounded cursor-pointer bg-olive-200 text-slate-900 font-semibold hover:bg-gray-100 hover:shadow-md transition flex items-center justify-center ${isActive.length > 0 ? 'bg-amber-400!' : ''} ${isSuccess.length > 0 ? 'hidden' : ''}${isWrong.length > 0 ? 'bg-red-400' : ''}`}
                             >
                                 {v}
                             </div>
