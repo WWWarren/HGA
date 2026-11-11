@@ -1,22 +1,4 @@
 [
-    {"name": "Disney Rides", "values": ["Space", "Thunder", "Splash", "Everest"]},
-    {"name": "NFL Teams", "values": ["Bills", "Cowboys", "Rams", "Lions"]},
-    {"name": "Odds Farm Animals", "values": ["Sheep", "Cows", "Chickens", "Goats"]},
-    {"name": "Mario Kart Characters", "values": ["Peach", "Daisy", "Kong", "Toad"]},
-    {"name": "Red Items", "values": ["Poppy", "Santa", "Blood", "Tomato"]},
-    {"name": "First two letters at start and end", "values": ["Onion", "Church", "Sense", "Mamma"]},
-    {"name": "Capital Cities", "values": ["Seoul", "Paris", "Warsaw", "Riga"]},
-    {"name": "Bridges", "values": ["London", "Tower", "Arch", "Golden"]},
-    {"name": "Vegetables", "values": ["Carrot", "Peas", "Brocoli", "Parsnip"]},
-    {"name": "Founding Fathers", "values": ["Hamilton", "Washington", "Adams", "Madison"]},
-    {"name": "Musicals", "values": ["Cats", "Starlight", "Six", "Back To The Future"]},
-    {"name": "Girls Names", "values": ["Sydney", "Emily", "Hannah", "Tara"]},
-    {"name": "Palindrome", "values": ["Radar", "Wow", "Noon", "Racecar"]},
-    {"name": "Ms Rachel Songs", "values": ["Bingo", "Bunnies", "Ants", "Phonics"]},
-    {"name": "Airlines", "values": ["Singapore", "British", "Delta", "Qatar"]},
-    {"name": "Phonetic Alphabet", "values": ["Papa", "Juliet", "Yankee", "India"]},
-    {"name": "Garlic", "values": ["Bread", "Cheese", "Bulb", "Breath"]},
-    {"name": "UK Traitors Winners", "values": ["Rachel", "Harry", "Alan", "Stephen"]},
-    {"name": "Our Favourite Songs", "values": ["Jupiter", "Wish", "Wait", "My Shot"]},
-    {"name": "Nicknames", "values": ["Burrito", "Bao Bun", "Madam Secretary", "Han"]}
+    {"name": "Disney Rides", "values": ["Space", "Thunder", "Splash", "Everest"]}
+
 ]
