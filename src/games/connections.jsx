@@ -1,4 +1,8 @@
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
 import data from '../data/connections.json';
 
@@ -7,6 +11,9 @@ function Connections() {
     const [wrong, SetWrongGuess] = useState({});
     const [guess, setGuess] = useState([]);
     const [values, setValues] = useState([]);
+    const [showAnswers, setShowAnswers] = useState(false);
+
+    library.add(fas);
 
     useEffect(() => {
         function initConnections() {
@@ -50,22 +57,25 @@ function Connections() {
 
     function renderSuccess() {
         return (
-            <div className="success">
-                {
-                    success.map((s, i) => {
-                        const connections = s.values.map((v) => (
-                            <div key={v} className="">{v}</div>
-                        ))
-                        return (
-                            <div key={i} className="bg-green-500 text-slate-900 p-4 rounded mb-4">
-                                <h3 className="title w-full font-bold text-2xl">{s.name}</h3>
-                                <div className="flex flex-wrap items-center justify-center gap-4 font-semibold">
-                                    {connections}
+            <div>
+                <div className="mb-4 cursor-pointer" onClick={() => setShowAnswers(!showAnswers)}>Show Answers {showAnswers ? <FontAwesomeIcon icon="fa-solid fa-angle-down" /> : <FontAwesomeIcon icon="fa-solid fa-angle-up" />}</div>
+                <div className={`${showAnswers ? 'h-0 overflow-hidden opacity-0 invisible transition-all' : 'h-auto opacity-100 visible transition-all'}`}>
+                    {
+                        success.map((s, i) => {
+                            const connections = s.values.map((v) => (
+                                <div key={v} className="">{v}</div>
+                            ))
+                            return (
+                                <div key={i} className="bg-green-500 text-slate-900 p-4 rounded mb-4">
+                                    <h3 className="title w-full font-bold text-2xl">{s.name}</h3>
+                                    <div className="flex flex-wrap items-center justify-center gap-4 font-semibold">
+                                        {connections}
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
             </div>
         )
     }
